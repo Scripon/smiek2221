@@ -1,0 +1,9 @@
+{
+  // 每次保存的时候取消自动格式化
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
+  // 不自动删除自动插入的尾随空格
+  "editor.trimAutoWhitespace": false,
+}
