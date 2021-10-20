@@ -26,7 +26,14 @@ if ($.isNode()) {
   cookiesArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
 }
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
-let inviteCodes = []
+// 自己的互助码
+let inviteCodes = [
+  'HYbsze2iSQ6kd4D1V5h_mr7dNsqtZSy-zjzbYF7JhoQmvw',
+  'HYDtzeyiQguke4b1V5h_mnzACQlCmnVJdIJrQNGKSCldJA',
+  'RtGKsqjYM337DPXfRb56mp1fjltww-jvNrdM5kNG809N6rET',
+  'W9G5u5DCOW7gBOXtaqx_mviBI6wJqB5pgCpzB_xKhz24E_U'
+
+]
 $.shareCodesArr = [];
 
 !(async () => {
